@@ -1,0 +1,129 @@
+/*Importing Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Merriweather+Sans|Paytone+One|Permanent+Marker');
+
+main {
+    padding-bottom: 25px;
+    min-height: 900px;
+    background-color: white;
+}
+
+header {
+    padding: 25px 0 0;
+    background: #fff;
+    line-height: 30px;
+}
+
+/*Banner*/
+.header {
+    color: #2B2D30;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    line-height: 40px;
+}
+
+.header h3 {
+    font-size: .7em;
+    font-style: italic;
+}
+
+.train-content {
+    font-family: 'Merriweather Sans', sans-serif;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.add-train {
+    font-family: 'Paytone One', sans-serif;
+}
+
+footer {
+    padding: 25px 0 35px;
+    background: #fff;
+    line-height: 30px;
+}
+
+.footer {
+    color: #2B2D30;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+/*Train Schedule Header and Table*/
+
+.schedule-head {
+    background: linear-gradient(#0066ff, #3385ff);
+    color:white;
+    padding: 8px;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5em;
+}
+
+thead {
+    background: linear-gradient(#ccc, #d9d9d9);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight:bold;
+}
+
+.remove-train-button {
+    margin: 8px;
+    color: white;
+    background: linear-gradient(#0066ff, #3385ff);
+    transition: all .2s ease-in-out;
+}
+
+.remove-train-button:hover {
+    transform: scale(1.05);
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    padding:10px;
+}
+
+form label {
+    color:#333;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1em;
+    padding-bottom:8px;
+}
+
+.submit-btn {
+    background: linear-gradient(#0066ff, #3385ff);
+    color:white;
+    transition: all .2s ease-in-out;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(1.03);
+}
+
+.submit-btn:focus, .submit-btn:active {
+    outline:none;
+    border: none;
+}
+
+/*Flip Clock*/
+.flip-clock-wrapper {
+    text-align: center;
+    width: 50%;
+}
+
+.flip-clock{
+    padding:0 0 0 2%;
+    transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    margin: auto;
+}
+

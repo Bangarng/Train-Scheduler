@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> Train Scheduler </title>
+    <!--==============Adding our Favicon==============-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/clocksprite.jpg"/>
+    <!--==============BOOTSTRAP CDN COMPILED AND MINIFIED CSS==============-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--==============JQUERY.MIN CDN==============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--==============flip clock JS + CSS==============-->
+    <script src="assets/javascript/flipclock.min.js"></script>
+    <link rel="stylesheet" href="assets/css/flipclock.css">
+    <!--==============parralax.js==============-->
+    <script src="assets/javascript/parallax.min.js"></script>
+    <!--==============moment.js==============-->
+  <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <!--==============Link to Firebase==============-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!--==============CSS Reset and HW4.css==============-->
+    <link rel="stylesheet" type="text/css" href="assets/css/hw7reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hw7.css">
+
+<body>
+    <header>
+        <div class="header container w-100">
+            <h1>Chu-Chu-Chuose Your Train!</h1><h3>How do you find a missing train? Follow the tracks. -anonymous </h3>
+            <div class="flip-clock clock"></div>
+        </div>
+    </header>
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="assets/images/HDRTrain.jpg" data-natural-width="1050" data-natural-height="600" style="height: 300px;"></div>
+    <main class="container col-md-12">
+        <section class="train-content col-md-8">
+            <!-- Rendered Buttons will get Dumped Here  -->
+            <div id="buttons-view"></div>
+            <br/>
+            <h1 class="schedule-head">Current Train Schedule:</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="train-schedules">
+
+                </tbody>
+            </table>    
+                    
+            <form role=form>
+                <div class="form-group">
+                    <label for="name-input">Train Name:</label>
+                    <input class="form-control" id="name-input" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="dest-input">Destination:</label>
+                    <input class="form-control" id="dest-input" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="first-time-input">First Train Time (HH:mm - military time):</label>
+                    <input class="form-control" id="first-time-input" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="freq-input">Frequency:</label>
+                    <input class="form-control" id="freq-input" type="text">
+                </div>
+                <!-- Submit Button -->
+                <button id="add-train" class="btn submit-btn" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="assets/images/HDRTrainTrack.jpg" data-natural-width="500" data-natural-height="125" style="height: 300px;"></div>
+    <footer class="col-md-12">
+        <div class="footer col-md-12">Until next time!</div>
+    </footer>
+
+    <!--Adding custom script-->
+    <script src="assets/javascript/hw7script.js"></script>
+
+</html>
